@@ -167,7 +167,7 @@ Phase-1 focuses on building a stable NAS and infrastructure foundation for futur
 # Architecture
 
 <p align="center">
-  <img src="docs/architecture/phase1-architecture.png" alt="Hybrid Cloud HomeLab Infrastructure Architecture" width="850">
+  <img src="docs/architecture/architecture.png" alt="Hybrid Cloud HomeLab Infrastructure Architecture" width="850">
 </p>
 
 <p align="center">
@@ -251,11 +251,6 @@ Phase-1 focuses on building a stable NAS and infrastructure foundation for futur
   <i>stable local network access</i>
 </p>
 
-### Screenshot Placeholder
-> Add screenshot:
-> - `ip addr`
-> - `ip route`
-
 ---
 
 ## 3. SSD Formatting & Mounting
@@ -333,26 +328,6 @@ Phase-1 focuses on building a stable NAS and infrastructure foundation for futur
 ---
 
 <p align="center">
-  <img src="docs/screenshots/windows-nas-access.png" alt="Windows NAS Access" width="850">
-</p>
-
-<p align="center">
-  <i>Samba NAS share accessed successfully from Windows system.</i>
-</p>
-
----
-
-<p align="center">
-  <img src="docs/screenshots/android-nas-access.jpg" alt="Android NAS Access" width="350">
-</p>
-
-<p align="center">
-  <i>NAS storage accessed successfully from Android device.</i>
-</p>
-
----
-
-<p align="center">
   <img src="docs/screenshots/samba-config.png" alt="Samba Configuration" width="850">
 </p>
 
@@ -390,16 +365,6 @@ After debugging and optimization:
 
 <p align="center">
   <i>Raspberry Pi successfully connected to 5 GHz Wi-Fi after optimization.</i>
-</p>
-
----
-
-<p align="center">
-  <img src="docs/screenshots/nas-transfer-speed.png" alt="NAS Transfer Speed" width="850">
-</p>
-
-<p align="center">
-  <i>Improved NAS file transfer performance after migrating to 5 GHz Wi-Fi.</i>
 </p>
 
 ---
@@ -541,26 +506,6 @@ The tests confirmed stable NAS communication between the Raspberry Pi server and
 ---
 
 <p align="center">
-  <img src="docs/screenshots/nas-file-transfer.png" alt="NAS File Transfer Test" width="850">
-</p>
-
-<p align="center">
-  <i>Large file transfer operation between client system and NAS storage.</i>
-</p>
-
----
-
-<p align="center">
-  <img src="docs/screenshots/nas-directory-contents.png" alt="NAS Directory Contents" width="850">
-</p>
-
-<p align="center">
-  <i>Directory structure and files stored inside the NAS environment.</i>
-</p>
-
----
-
-<p align="center">
   <img src="docs/screenshots/nas-transfer-speed-demo.png" alt="NAS Transfer Speed" width="850">
 </p>
 
@@ -655,30 +600,6 @@ The setup was designed to maintain:
 
 ---
 
-### External NVMe SSD Enclosure
-
-<p align="center">
-  <img src="docs/screenshots/nvme-ssd-enclosure.jpg" alt="NVMe SSD Enclosure" width="650">
-</p>
-
-<p align="center">
-  <i>External NVMe SSD enclosure connected to the Raspberry Pi infrastructure.</i>
-</p>
-
----
-
-### Cooling System
-
-<p align="center">
-  <img src="docs/screenshots/pi5-cooling-fan.jpg" alt="Cooling Fan Setup" width="650">
-</p>
-
-<p align="center">
-  <i>Active cooling solution used to maintain stable Raspberry Pi operating temperatures.</i>
-</p>
-
----
-
 ### Complete Hardware Infrastructure
 
 <p align="center">
@@ -687,18 +608,6 @@ The setup was designed to maintain:
 
 <p align="center">
   <i>Complete Phase-1 Hybrid Cloud HomeLab Infrastructure hardware setup.</i>
-</p>
-
----
-
-### Cable Management & Connectivity
-
-<p align="center">
-  <img src="docs/screenshots/cable-management.jpg" alt="Cable Management" width="850">
-</p>
-
-<p align="center">
-  <i>Power, storage, and connectivity arrangement of the infrastructure setup.</i>
 </p>
 
 ---
