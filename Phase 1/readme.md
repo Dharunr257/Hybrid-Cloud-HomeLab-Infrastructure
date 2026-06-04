@@ -439,15 +439,6 @@ The backup system is intended to support future:
 
 ---
 
-<p align="center">
-  <img src="docs/screenshots/backup-script.png" alt="Backup Script Foundation" width="850">
-</p>
-
-<p align="center">
-  <i>Initial backup script preparation for future automated backup workflows.</i>
-</p>
-
----
 
 <p align="center">
   <img src="docs/screenshots/backup-script-execution.png" alt="Backup Script Execution" width="850">
