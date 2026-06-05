@@ -323,7 +323,7 @@ tree -L 2 -d /mnt/homelab-storage
 ## 🔹 Android App Integration
 
 <p align="center">
-  <img src="docs/screenshots/android-app-integration.png" alt="Android App Integration" width="400">
+  <img src="docs/screenshots/android-app-integration.jpeg" alt="Android App Integration" width="400">
 </p>
 
 <p align="center">
