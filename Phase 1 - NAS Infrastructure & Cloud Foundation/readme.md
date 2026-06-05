@@ -475,7 +475,7 @@ The Samba-based NAS environment enabled seamless cross-platform file access and 
 ---
 
 <p align="center">
-  <img src="docs/screenshots/android-nas-demo.jpg" alt="Android NAS Access Demonstration" width="350">
+  <img src="docs/screenshots/android-nas-demo.jpeg" alt="Android NAS Access Demonstration" width="350">
 </p>
 
 <p align="center">
@@ -582,7 +582,7 @@ The setup was designed to maintain:
 ### Raspberry Pi 5 Setup
 
 <p align="center">
-  <img src="docs/screenshots/pi5-setup.jpg" alt="Raspberry Pi 5 Setup" width="650">
+  <img src="docs/screenshots/pi5-setup.jpeg" alt="Raspberry Pi 5 Setup" width="650">
 </p>
 
 <p align="center">
@@ -594,7 +594,7 @@ The setup was designed to maintain:
 ### Complete Hardware Infrastructure
 
 <p align="center">
-  <img src="docs/screenshots/complete-hardware-setup.jpg" alt="Complete Hardware Setup" width="850">
+  <img src="docs/screenshots/complete-hardware-setup.jpeg" alt="Complete Hardware Setup" width="850">
 </p>
 
 <p align="center">
