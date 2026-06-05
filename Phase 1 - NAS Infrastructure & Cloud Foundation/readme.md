@@ -523,8 +523,8 @@ The tests confirmed stable NAS communication between the Raspberry Pi server and
 
 | Test | Result |
 |---|---|
-| 2.4 GHz NAS Transfer | ~1.5 MB/s |
-| 5 GHz NAS Transfer | ~10–13 MB/s |
+| 2.4 GHz NAS Transfer | ~3.5 MB/s |
+| 5 GHz NAS Transfer | ~15–20 MB/s |
 | SSD Mounting | Successful |
 | Docker Engine | Working |
 | SSH Access | Working |
