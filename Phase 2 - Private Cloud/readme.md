@@ -294,13 +294,6 @@ docker ps
 </p>
 
 ---
-Command Used:
-
-```bash
-tree -L 2 -d /mnt/homelab-storage/nextcloud
-```
-
----
 
 ## 🔹 Complete HCHI Storage Structure
 
@@ -315,7 +308,7 @@ tree -L 2 -d /mnt/homelab-storage/nextcloud
 Command Used:
 
 ```bash
-tree -L 2 -d /mnt/homelab-storage
+tree -L 2 -d /mnt/homelab-storage/nextcloud
 ```
 
 ---
