@@ -186,7 +186,7 @@ Raspberry Pi 5
 ```
 
 <p align="center">
-  <img src="docs/screenshots/phase2/storage-architecture.png" alt="Storage Architecture" width="750">
+  <img src="docs/screenshots/storage-architecture.png" alt="Storage Architecture" width="750">
 </p>
 
 <p align="center">
@@ -231,7 +231,7 @@ Raspberry Pi 5
 ## 🔹 Docker Containers Running
 
 <p align="center">
-  <img src="docs/screenshots/phase2/docker-containers-running.png" alt="Docker Containers Running" width="900">
+  <img src="docs/screenshots/docker-containers-running.png" alt="Docker Containers Running" width="900">
 </p>
 
 <p align="center">
@@ -249,7 +249,7 @@ docker ps
 ## 🔹 Nextcloud Login Page
 
 <p align="center">
-  <img src="docs/screenshots/phase2/nextcloud-login-page.png" alt="Nextcloud Login Page" width="900">
+  <img src="docs/screenshots/nextcloud-login-page.png" alt="Nextcloud Login Page" width="900">
 </p>
 
 <p align="center">
@@ -261,7 +261,7 @@ docker ps
 ## 🔹 Nextcloud Dashboard
 
 <p align="center">
-  <img src="docs/screenshots/phase2/nextcloud-dashboard.png" alt="Nextcloud Dashboard" width="900">
+  <img src="docs/screenshots/nextcloud-dashboard.png" alt="Nextcloud Dashboard" width="900">
 </p>
 
 <p align="center">
@@ -273,7 +273,7 @@ docker ps
 ## 🔹 File Upload Test
 
 <p align="center">
-  <img src="docs/screenshots/phase2/file-upload-test.png" alt="File Upload Test" width="900">
+  <img src="docs/screenshots/file-upload-test.png" alt="File Upload Test" width="900">
 </p>
 
 <p align="center">
@@ -285,7 +285,7 @@ docker ps
 ## 🔹 Nextcloud Folder Structure
 
 <p align="center">
-  <img src="docs/screenshots/phase2/nextcloud-folder-structure.png" alt="Nextcloud Folder Structure" width="850">
+  <img src="docs/screenshots/nextcloud-folder-structure.png" alt="Nextcloud Folder Structure" width="850">
 </p>
 
 <p align="center">
@@ -303,7 +303,7 @@ tree -L 2 -d /mnt/homelab-storage/nextcloud
 ## 🔹 Complete HCHI Storage Structure
 
 <p align="center">
-  <img src="docs/screenshots/phase2/hchi-storage-structure.png" alt="HCHI Storage Structure" width="850">
+  <img src="docs/screenshots/hchi-storage-structure.png" alt="HCHI Storage Structure" width="850">
 </p>
 
 <p align="center">
@@ -321,7 +321,7 @@ tree -L 2 -d /mnt/homelab-storage
 ## 🔹 Android App Integration
 
 <p align="center">
-  <img src="docs/screenshots/phase2/android-app-integration.png" alt="Android App Integration" width="400">
+  <img src="docs/screenshots/android-app-integration.png" alt="Android App Integration" width="400">
 </p>
 
 <p align="center">
