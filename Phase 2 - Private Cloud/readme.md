@@ -270,17 +270,6 @@ docker ps
 
 ---
 
-## 🔹 File Upload Test
-
-<p align="center">
-  <img src="docs/screenshots/file-upload-test.png" alt="File Upload Test" width="900">
-</p>
-
-<p align="center">
-  <i>Testing file upload functionality inside the private cloud.</i>
-</p>
-
----
 
 ## 🔹 Nextcloud Folder Structure
 
@@ -292,6 +281,19 @@ docker ps
   <i>Directory structure of the Nextcloud persistent storage.</i>
 </p>
 
+---
+
+## 🔹 File Upload Test
+
+<p align="center">
+  <img src="docs/screenshots/file-upload-test.png" alt="File Upload Test" width="900">
+</p>
+
+<p align="center">
+  <i>Testing file upload functionality inside the private cloud.</i>
+</p>
+
+---
 Command Used:
 
 ```bash
