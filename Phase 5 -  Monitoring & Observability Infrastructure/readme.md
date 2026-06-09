@@ -239,7 +239,7 @@ Telegram Bot API integration was configured for real-time infrastructure notific
 * Service recovery notifications
 
 <p align="center">
-  <img src="docs/screenshots/telegram-alert.png" width="60%">
+  <img src="docs/screenshots/telegram-alert.jpeg" width="60%">
 </p>
 
 ---
