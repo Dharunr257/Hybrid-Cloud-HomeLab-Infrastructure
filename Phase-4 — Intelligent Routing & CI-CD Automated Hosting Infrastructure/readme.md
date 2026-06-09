@@ -266,11 +266,6 @@ task-manager-app
         ↓
 Docker Container
 ```
-
-<p align="center">
-  <img src="docs/architecture/intelligent-routing-flow.png" width="100%">
-</p>
-
 <p align="center">
   <img src="docs/screenshots/nginx-proxy-hosts.png" width="100%">
 </p>
@@ -578,11 +573,14 @@ Phase-4 successfully transformed the Hybrid Cloud HomeLab Infrastructure into a 
 
 The infrastructure now simulates real-world platform engineering workflows using fully self-hosted open-source tooling running on Raspberry Pi 5 infrastructure.
 
-<p align="center">
-  <img src="docs/screenshots/final-phase-4-infrastructure.png" width="100%">
-</p>
+
 
 ---
+# 👨‍💻 Author
+
+## Dharun R
+
+Hybrid Cloud HomeLab Infrastructure (HCHI)
 
 ```
 ```
