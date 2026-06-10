@@ -20,14 +20,34 @@
 </p>
 
 ---
-
 # Project Vision
 
 After earning the AWS Solutions Architect Associate certification, I realized that modern cloud platforms abstract away much of the underlying infrastructure complexity.
 
 While cloud services simplify deployment and operations, I wanted to deeply understand the actual engineering problems these services were designed to solve.
 
-Instead of starting directly with managed cloud services and console-driven workflows, I intentionally began from the infrastructure layer itself:
+I asked myself a simple but important question:
+
+> **Do I truly understand what cloud platforms are built on top of — or am I only consuming their abstractions?**
+
+Cloud platforms provide highly managed interfaces for deploying applications, managing databases, configuring networking, monitoring systems, handling storage, and automating infrastructure. But underneath those abstractions are real physical systems — servers, storage devices, networking layers, deployment pipelines, monitoring stacks, and operational workflows running inside data centers.
+
+Before modern cloud platforms existed, organizations managed all of this infrastructure themselves:
+
+- physical servers
+- storage systems
+- internal networking
+- deployment pipelines
+- monitoring infrastructure
+- backup systems
+- failover handling
+- operational recovery
+
+Cloud providers studied these operational challenges over decades and built managed services to simplify them.
+
+That realization became the foundation of this project.
+
+Rather than starting directly with managed cloud services and console-driven workflows, I intentionally started from the infrastructure layer itself:
 
 - self-hosted storage
 - Linux server administration
@@ -40,25 +60,41 @@ Instead of starting directly with managed cloud services and console-driven work
 - failover handling
 - infrastructure troubleshooting
 
-Cloud platforms are ultimately built on top of real infrastructure, networking, automation, storage systems, and operational engineering principles.
+Because — **I wanted to experience the operational problems first before relying on the managed solutions built to solve them.**
 
-So rather than only experiencing the solutions provided by cloud platforms, I wanted to first experience the actual operational challenges behind them.
+Instead of immediately using cloud-managed services, I rebuilt similar categories of infrastructure from scratch using a Raspberry Pi 5 homelab environment.
 
-This project became a hands-on journey into understanding the foundations behind:
+| Instead of... | I built... |
+|---|---|
+| Amazon S3 | Self-hosted NAS with NVMe storage and Samba |
+| RDS / managed databases | Dockerized Nextcloud + MariaDB with persistent volumes |
+| AWS CodePipeline / CodeDeploy | Self-hosted GitHub Actions CI/CD runner |
+| Application Load Balancer / Route 53 | NGINX reverse proxy with intelligent routing and health-aware failover |
+| CloudWatch Logs + Metrics | Grafana + Prometheus + Loki + Promtail observability stack |
+| AWS Backup | Hybrid cloud backup pipeline with automated S3 synchronization |
 
-- cloud engineering
-- DevOps
-- platform engineering
-- observability
-- networking
-- infrastructure reliability
-- operational troubleshooting
+Working through the raw engineering challenges — networking issues, storage failures, container communication problems, monitoring blind spots, deployment failures, and recovery workflows — gave me something that certifications and tutorials alone cannot provide:
 
-What initially started as separate infrastructure experiments eventually evolved into a single large-scale phased infrastructure ecosystem called **Hybrid Cloud HomeLab Infrastructure (HCHI)**.
+> **Operational intuition.**
+
+This project helped me understand not only how cloud services work, but why they were designed the way they are.
+
+That deeper understanding directly improves:
+
+- infrastructure design decisions
+- production troubleshooting
+- reliability engineering
+- deployment architecture
+- monitoring strategies
+- operational resilience
+
+What initially started as separate infrastructure experiments gradually evolved into a single large-scale phased ecosystem called:
+
+# Hybrid Cloud HomeLab Infrastructure (HCHI)
 
 ---
 
-# Project Highlights
+# Infrastructure at a Glance
 
 | Infrastructure Capability | Description |
 |---|---|
@@ -75,7 +111,7 @@ What initially started as separate infrastructure experiments eventually evolved
 
 ---
 
-# Final Architecture
+# Architecture Overview
 
 The final HCHI architecture combines:
 
@@ -94,8 +130,18 @@ into a unified self-hosted infrastructure ecosystem.
   <img src="./final-hchi-complete-architecture.png" alt="Final HCHI Architecture" width="100%">
 </p>
 
-The infrastructure is built around a Raspberry Pi 5 running Ubuntu Server with Dockerized services, persistent NVMe storage, internal networking, automated deployment systems, monitoring pipelines, and cloud-integrated backup workflows.
+The entire infrastructure runs on a **Raspberry Pi 5 (Ubuntu Server)** with:
 
+- Dockerized services and persistent NVMe SSD storage
+- Self-hosted private cloud infrastructure using Nextcloud and MariaDB
+- Intelligent reverse proxy routing with health-aware failover handling
+- Self-hosted CI/CD automation using GitHub Actions runners
+- AWS S3 hybrid cloud backup integration with automated synchronization
+- Full observability stack using Grafana, Prometheus, Loki, Promtail, Node Exporter, cAdvisor, and Uptime Kuma
+- Telegram-integrated infrastructure alerting and monitoring
+- Local-network-only architecture with internal DNS-based service routing
+
+The project was designed to simulate real infrastructure engineering, platform engineering, DevOps workflows, and operational troubleshooting within a lightweight self-hosted environment.
 ---
 
 # Infrastructure Phases Overview
@@ -127,14 +173,15 @@ Phase 1 focused on building the foundational infrastructure layer for the entire
 ### NAS Infrastructure
 
 <p align="center">
-  <img src="Phase 1 - NAS Infrastructure & Cloud Foundation/docs/screenshots/nvme-storage-mounted.png" width="48%">
-  <img src="Phase 1 - NAS Infrastructure & Cloud Foundation/docs/screenshots/samba-share-configuration.png" width="48%">
+  <img src="Phase 1 - NAS Infrastructure & Cloud Foundation/docs/screenshots/ssd-mounted-df.png" width="48%">
+  <img src="Phase 1 - NAS Infrastructure & Cloud Foundation/docs/screenshots/samba-config.png" width="48%">
 </p>
 
 ### Storage Foundation
 
 <p align="center">
-  <img src="Phase 1 - NAS Infrastructure & Cloud Foundation/docs/screenshots/storage-directory-structure.png" width="70%">
+  <img src="Phase 1 - NAS Infrastructure & Cloud Foundation/docs/screenshots/storage-structure.png" width="70%">
+  <img src="Phase 1 - NAS Infrastructure & Cloud Foundation/docs/screenshots/windows-nas-demo.png" width="70%">
 </p>
 
 ---
@@ -148,7 +195,7 @@ Phase 2 transformed the infrastructure into a fully functional self-hosted priva
 ## Architecture
 
 <p align="center">
-  <img src="Phase 2 - Private Cloud/docs/architecture/phase-2-private-cloud-architecture.png" width="100%">
+  <img src="Phase 2 - Private Cloud/docs/architecture/phase2-private-cloud-architecture.png" width="100%">
 </p>
 
 ## Infrastructure Showcase
@@ -163,7 +210,7 @@ Phase 2 transformed the infrastructure into a fully functional self-hosted priva
 ### Persistent Storage Architecture
 
 <p align="center">
-  <img src="Phase 2 - Private Cloud/docs/screenshots/nextcloud-volume-structure.png" width="70%">
+  <img src="Phase 2 - Private Cloud/docs/screenshots/nextcloud-folder-structure.png" width="70%">
 </p>
 
 ---
@@ -177,7 +224,7 @@ Phase 3 introduced hybrid cloud architecture concepts by integrating AWS S3 back
 ## Architecture
 
 <p align="center">
-  <img src="Phase 3 - Hybrid cloud Storage Infrastructure/docs/architecture/phase-3-hybrid-cloud-architecture.png" width="100%">
+  <img src="Phase 3 - Hybrid cloud Storage Infrastructure /docs/architecture/phase3-hybrid-cloud-architecture.png" width="100%">
 </p>
 
 ## Infrastructure Showcase
@@ -185,8 +232,8 @@ Phase 3 introduced hybrid cloud architecture concepts by integrating AWS S3 back
 ### Hybrid Cloud Backup Pipeline
 
 <p align="center">
-  <img src="Phase 3 - Hybrid cloud Storage Infrastructure/docs/screenshots/full-backup-pipeline.png" width="48%">
-  <img src="Phase 3 - Hybrid cloud Storage Infrastructure/docs/screenshots/aws-s3-verification.png" width="48%">
+  <img src="Phase 3 - Hybrid cloud Storage Infrastructure /docs/screenshots/full-backup-pipeline.png" width="48%">
+  <img src="Phase 3 - Hybrid cloud Storage Infrastructure /docs/screenshots/aws-s3-verification.png" width="48%">
 </p>
 
 ### Backup Automation
@@ -238,7 +285,7 @@ Phase 5 introduced centralized monitoring, metrics collection, log aggregation, 
 ## Architecture
 
 <p align="center">
-  <img src="Phase 5 - Monitoring & Observability Infrastructure/docs/architecture/observability-architecture.png" width="100%">
+  <img src="Phase 5 -  Monitoring & Observability Infrastructure/docs/architecture/observability-architecture.png" width="100%">
 </p>
 
 ## Infrastructure Showcase
@@ -246,15 +293,15 @@ Phase 5 introduced centralized monitoring, metrics collection, log aggregation, 
 ### Monitoring Dashboards
 
 <p align="center">
-  <img src="Phase 5 - Monitoring & Observability Infrastructure/docs/screenshots/grafana-dashboard.png" width="48%">
-  <img src="Phase 5 - Monitoring & Observability Infrastructure/docs/screenshots/docker-monitoring-stack-2.png" width="48%">
+  <img src="Phase 5 -  Monitoring & Observability Infrastructure/docs/screenshots/grafana-dashboard.png" width="48%">
+  <img src="Phase 5 -  Monitoring & Observability Infrastructure/docs/screenshots/docker-monitoring-stack-2.png" width="48%">
 </p>
 
-### Observability Stack
+### Observability & Notification Stack 
 
 <p align="center">
-  <img src="Phase 5 - Monitoring & Observability Infrastructure/docs/screenshots/uptime-kuma-monitoring.png" width="48%">
-  <img src="Phase 5 - Monitoring & Observability Infrastructure/docs/screenshots/telegram-alert.jpeg" width="48%">
+  <img src="Phase 5 -  Monitoring & Observability Infrastructure/docs/screenshots/uptime-kuma-dashboard.png" width="48%">
+  <img src="Phase 5 -  Monitoring & Observability Infrastructure/docs/screenshots/telegram-alert.jpeg" width="48%">
 </p>
 
 ---
@@ -393,6 +440,9 @@ That experience significantly strengthened my understanding of cloud engineering
 
 ---
 
-# Final Showcase Statement
+# 👨‍💻 Author
 
-HCHI represents my journey into infrastructure engineering, platform engineering, DevOps automation, networking, observability, and hybrid cloud architecture — built from the ground up to understand the real operational foundations behind modern cloud systems.
+**Dharun R**
+
+Hybrid Cloud HomeLab Infrastructure (HCHI)
+---
