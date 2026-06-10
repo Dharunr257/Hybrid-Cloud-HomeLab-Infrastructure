@@ -146,7 +146,7 @@ The project was designed to simulate real infrastructure engineering, platform e
 
 # Infrastructure Phases Overview
 
-| Phase | Engineering Focus | Core Infrastructure | Documentation |
+| Phase   | Engineering Focus | Core Infrastructure | Documentation |
 |----|---|---|---|
 | Phase 1  | NAS Infrastructure Foundation | Samba, NVMe Storage, Ubuntu Server | `/phase-1-nas-foundation/README.md` |
 | Phase 2  | Private Cloud Infrastructure | Nextcloud, MariaDB, Docker | `/phase-2-private-cloud/README.md` |
