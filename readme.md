@@ -147,12 +147,12 @@ The project was designed to simulate real infrastructure engineering, platform e
 # Infrastructure Phases Overview
 
 | Phase | Engineering Focus | Core Infrastructure | Documentation |
-|---|---|---|---|
-| Phase 1 | NAS Infrastructure Foundation | Samba, NVMe Storage, Ubuntu Server | `/phase-1-nas-foundation/README.md` |
-| Phase 2 | Private Cloud Infrastructure | Nextcloud, MariaDB, Docker | `/phase-2-private-cloud/README.md` |
-| Phase 3 | Hybrid Cloud Storage | AWS S3 Backup Integration | `/phase-3-hybrid-storage/README.md` |
-| Phase 4 | Platform Engineering & CI/CD | GitHub Actions, NGINX Proxy Manager | `/phase-4-platform-engineering/README.md` |
-| Phase 5 | Monitoring & Observability | Grafana, Prometheus, Loki | `/phase-5-observability/README.md` |
+|----|---|---|---|
+| Phase 1  | NAS Infrastructure Foundation | Samba, NVMe Storage, Ubuntu Server | `/phase-1-nas-foundation/README.md` |
+| Phase 2  | Private Cloud Infrastructure | Nextcloud, MariaDB, Docker | `/phase-2-private-cloud/README.md` |
+| Phase 3  | Hybrid Cloud Storage | AWS S3 Backup Integration | `/phase-3-hybrid-storage/README.md` |
+| Phase 4  | Platform Engineering & CI/CD | GitHub Actions, NGINX Proxy Manager | `/phase-4-platform-engineering/README.md` |
+| Phase 5  | Monitoring & Observability | Grafana, Prometheus, Loki | `/phase-5-observability/README.md` |
 
 ---
 
